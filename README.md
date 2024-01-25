@@ -1,6 +1,6 @@
 # TabNews Scraper
 
-![General project architecture focusing on the scraper](tabnews-scraper-archtecture.png){:width="300px" height="200px"}
+![General project architecture focusing on the scraper](assets/tabnews-scraper-archtecture.png){:width="300px" height="200px"}
 
 
 
