@@ -2,17 +2,27 @@ from typing import List
 
 import requests
 from bs4 import BeautifulSoup
-from requests import Response
 
 
-def request_page_html(url: str) -> Response:
-    response = requests.get(url)
+def request_page_html(url: str) -> str:
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as err:
+        print(f"[ERROR] could not get page, stopping scrape. Error: {err}")
+        raise SystemExit()
 
     return response.text
 
 
 def extract_post_list_items(soup: BeautifulSoup) -> List[str]:
-    return soup.div.div.main.ol.contents
+    try:
+        post_list_items = soup.div.div.main.ol.contents
+    except AttributeError as err:
+        print(f"[ERROR] bs4 could not find element. Error: {err}")
+        raise SystemExit()
+
+    return post_list_items
 
 
 def extract_post_title(li: str) -> str:
