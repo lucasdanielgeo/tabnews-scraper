@@ -1,12 +1,12 @@
 # TabNews Scraper
 
-![General project architecture focusing on the scraper](assets/tabnews-scraper-archtecture.png){:width="300px" height="200px"}
-
-
+![General project architecture focusing on the scraper](assets/tabnews-scraper-archtecture.png)
 
 ## Overview
 
 TabNews Scraper is a Python project designed to scrape data from the TabNews page. The scraper periodically collects information from the page, ensuring that only new data is fetched and then sends it to a message queue.
+
+This service **is part of a bigger project that I've been planning**, aiming to create multiple services from TabNews. As the other services are created, I will list them here.
 
 The idea behind the TabNews project was to foster the development community in Brazil, and I found no better place to apply my studies.
 
