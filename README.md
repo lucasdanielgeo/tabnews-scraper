@@ -19,7 +19,7 @@ You can access TabNews at https://www.tabnews.com.br/
 - Sends scraped data to a message queue for further processing.
 
 ## To Do:
-- [ ] Create a basic scraper for the recent publications page.
+- [x] Create a basic scraper for the recent publications page.
 - [ ] Write tests for the scraper.
 - [ ] Create integration with a real message queue service.
 - [ ] Implement logic to scraping at intervals (avoiding duplicates).
