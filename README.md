@@ -30,3 +30,19 @@ You can access TabNews at https://www.tabnews.com.br/
 - Python 3.x
 - Message queue system TBD (e.g., RabbitMQ, Apache Kafka)
 
+## Running the Project
+
+Make sure you have Docker installed on your system.
+
+```bash
+# Build docker image
+make build-image
+
+# Run docker container
+make run-container
+
+# Install dependencies locally
+make install
+
+# Run the project locally
+make run
